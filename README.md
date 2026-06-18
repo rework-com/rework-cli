@@ -20,7 +20,7 @@ Or grab a binary from the [latest release](https://github.com/rework-com/rework-
 ## Usage
 
 ```bash
-rework auth login                 # sign in with your Rework account (token stored in ~/.rework)
+rework auth login                 # sign in with your Rework account
 rework me
 rework cowork workspace list
 rework cowork project list [workspaceId]
@@ -32,5 +32,4 @@ rework cowork task create <boardId> <name...>
 # global:  --json   raw JSON output
 ```
 
-Sign-in goes through Rework's AI-safe proxy — your password is never stored, only a revocable opaque token.
-Sign out any time with `rework auth logout`.
+Sign in with your Rework account via OAuth 2.0. Sign out any time with `rework auth logout`.
