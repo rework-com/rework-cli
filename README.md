@@ -22,14 +22,18 @@ Or grab a binary from the [latest release](https://github.com/rework-com/rework-
 ```bash
 rework auth login                 # sign in with your Rework account
 rework me
-rework cowork workspace list
-rework cowork project list [workspaceId]
-rework cowork project overview <projectId>
+
+# Cowork — full project management (run `rework help` for every command)
+rework cowork project list
 rework cowork board list <projectId>
-rework cowork board page <boardId>
-rework cowork task list <boardId>
 rework cowork task create <boardId> <name...>
-# global:  --json   raw JSON output
+rework cowork task status <taskId> 1
+rework cowork issue create <projectId> <title...>
+rework cowork plan create milestone <projectId> <name...>
+# …workspaces, board columns, flow, planning, resources, docs, search — see `rework help`
+
+# Feedback — report a bug or request a feature to the Rework team
+rework feedback "<your feedback>"
 ```
 
 Sign in with your Rework account via OAuth 2.0. Sign out any time with `rework auth logout`.
